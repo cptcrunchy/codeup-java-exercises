@@ -9,8 +9,8 @@ public class CircleApp {
         do {
             System.out.println("Enter the radius: ");
             Circle circle = new Circle(input.getDouble());
-            System.out.println(circle.getArea());
-            System.out.println(circle.getCircumference());
+            System.out.println("The circumference is: " + circle.getArea());
+            System.out.println("The area is: " + circle.getCircumference());
 
             System.out.println("Would you like to enter another[y/n]: ");
             input.getString();
