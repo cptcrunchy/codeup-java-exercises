@@ -1,4 +1,3 @@
-import javax.print.DocFlavor;
 import java.util.Scanner;
 
 public class TicTacToeTest {
@@ -46,6 +45,14 @@ public class TicTacToeTest {
             }
             game.maxTurns--;
             // --- Player Two ---
+        }
+        System.out.println("Would you like to play again?[y/n]: ");
+        String playAgain = input.nextLine();
+
+        if (playAgain.trim().toLowerCase().equals("y") || playAgain.trim().toLowerCase().equals("yes")) {
+            TicTacToeTest.main(new String[0]);
+        } else {
+            System.exit(0);
         }
     }
 
