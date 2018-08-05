@@ -125,34 +125,6 @@ public class TicTacToe {
         winningMoves.put("xLeftToRight", board[1][1]+board[2][2]+board[3][3]);
         winningMoves.put("xRightToLeft", board[1][3]+board[2][2]+board[3][1]);
 
-//        String[][] winnableMoves = {
-//                {board[1][1]+board[1][2]+board[1][3]},
-//                {board[1][3]+board[2][3]+board[3][3]},
-//                {board[3][1]+board[3][2]+board[3][3]},
-//                {board[1][1]+board[2][1]+board[3][1]},
-//                {board[1][2]+board[2][2]+board[3][2]},
-//                {board[1][1]+board[2][2]+board[3][3]},
-//                {board[1][3]+board[2][2]+board[3][1]}
-//        };
-
-//        for (String[] row : winnableMoves) {
-//            for (String winningLine : row) {
-//                if (winningLine.equals(this.winO)) {
-//                    if (winningMoves.containsValue(this.winO)) {
-//                        System.out.println("win O");
-//                    }
-//                    System.out.printf("\n|======%s is the WINNER!======|\n", this.playerOneName);
-//                    return true;
-//                } else if (winningLine.equals(this.winX)) {
-//                    if (winningMoves.containsValue(this.winX)) {
-//                        System.out.println("win X");
-//                    }
-//                    System.out.printf("\n|======%s is the WINNER!======|\n", this.playerTwoName);
-//                    return true;
-//                }
-//            }
-//        }
-//
         if (winningMoves.containsValue(this.winO)) {
             System.out.printf("\n|======%s is the WINNER!======|\n", this.playerOneName);
             return true;
