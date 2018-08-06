@@ -22,11 +22,25 @@ public class Input {
     }
 
     public int getInt() {
-        return scanner.nextInt();
+        String input = getString();
+        try {
+            return Integer.valueOf(input);
+        } catch (NumberFormatException e) {
+            System.out.println("Your input was not an integer");
+            System.out.println("Please enter a integer");
+            return scanner.nextInt();
+        }
     }
 
     public double getDouble() {
-        return scanner.nextDouble();
+        String input = getString();
+        try {
+            return Double.valueOf(input);
+        } catch (NumberFormatException e) {
+            System.out.println("Your input was not a double");
+            System.out.println("Please enter a double");
+            return scanner.nextDouble();
+        }
     }
 
     public String getString() {
