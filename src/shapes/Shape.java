@@ -1,4 +1,4 @@
-package Shapes;
+package shapes;
 
 abstract class Shape {
 }
